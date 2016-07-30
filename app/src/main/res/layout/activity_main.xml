@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.olivo.twentyfour.MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,6 +19,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="24 ans"
-            android:id="@+id/button" />
-    </LinearLayout>
+            android:id="@+id/a24Ans" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mon sac est fait"
+            android:id="@+id/monSacEstFait"
+            android:layout_below="@+id/a24Ans" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pour combien"
+            android:id="@+id/pourCombien"
+            android:layout_below="@+id/monSacEstFait"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mais je buvais"
+            android:id="@+id/maisJeBuvais"
+            android:layout_below="@+id/pourCombien"/>
+
+    </RelativeLayout>
 </RelativeLayout>
