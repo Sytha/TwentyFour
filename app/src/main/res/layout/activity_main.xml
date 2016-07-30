@@ -38,6 +38,18 @@
             android:text="Mais je buvais"
             android:id="@+id/maisJeBuvais"
             android:layout_below="@+id/pourCombien"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tu es grosse"
+            android:id="@+id/tuEsGrosse"
+            android:layout_below="@+id/maisJeBuvais"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mais oui"
+            android:id="@+id/maisOui"
+            android:layout_below="@+id/tuEsGrosse"/>
 
     </RelativeLayout>
 </RelativeLayout>

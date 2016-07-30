@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         final int sacId = sp.load(this, R.raw.mon_sac_est_fait, 1);
         final int combienId = sp.load(this, R.raw.pour_combien_de_personnes, 1);
         final int jeBuvaisId = sp.load(this, R.raw.mais_je_buvais, 1);
+        final int grosseId = sp.load(this, R.raw.tu_es_grosse, 1);
+        final int maisOuiId = sp.load(this, R.raw.mais_oui, 1);
 
 
         // buttons
@@ -44,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         Button bt_monSacEstFait = (Button)this.findViewById(R.id.monSacEstFait);
         Button bt_combien = (Button)this.findViewById(R.id.pourCombien);
         Button bt_jeBuvais = (Button)this.findViewById(R.id.maisJeBuvais);
+        Button bt_tuEsGrosse = (Button)this.findViewById(R.id.tuEsGrosse);
+        Button bt_maisOui = (Button)this.findViewById(R.id.maisOui);
 
 
         // onClick events
@@ -69,6 +73,18 @@ public class MainActivity extends AppCompatActivity {
         bt_jeBuvais.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 sp.play(jeBuvaisId, 1, 1, 1, 0, 1);
+            }
+        });
+        // Tu es grosse, Mélissandre!
+        bt_tuEsGrosse.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                sp.play(grosseId, 1, 1, 1, 0, 1);
+            }
+        });
+        // Mais je buvais! JE BUVAIIIS
+        bt_maisOui.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                sp.play(maisOuiId, 1, 1, 1, 0, 1);
             }
         });
     }
