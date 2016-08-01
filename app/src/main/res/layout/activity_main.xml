@@ -37,6 +37,13 @@
             android:layout_height="wrap_content"
             android:text="Mais je buvais"
             android:id="@+id/maisJeBuvais"
+            android:layout_below="@+id/maisOui"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pardon"
+            android:id="@+id/maisJeBuvais"
             android:layout_below="@+id/pourCombien"/>
         <Button
             android:layout_width="match_parent"
@@ -50,6 +57,32 @@
             android:text="Mais oui"
             android:id="@+id/maisOui"
             android:layout_below="@+id/tuEsGrosse"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leviosaaa (Rogue)"
+            android:id="@+id/rogueLeviosa"
+            android:layout_below="@+id/maisOui"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leviosaaa (Ron)"
+            android:id="@+id/ronLeviosa"
+            android:layout_below="@+id/rogueLeviosa"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop it Ron"
+            android:id="@+id/stopItRon"
+            android:layout_below="@+id/ronLeviosa"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wingardium Leviosa"
+            android:id="@+id/wingardiumLeviosa"
+            android:layout_below="@+id/stopItRon"/>
+
+
 
     </RelativeLayout>
 </RelativeLayout>

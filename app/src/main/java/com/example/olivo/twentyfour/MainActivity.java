@@ -2,7 +2,6 @@ package com.example.olivo.twentyfour;
 
 import android.media.AudioAttributes;
 import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
         final int jeBuvaisId = sp.load(this, R.raw.mais_je_buvais, 1);
         final int grosseId = sp.load(this, R.raw.tu_es_grosse, 1);
         final int maisOuiId = sp.load(this, R.raw.mais_oui, 1);
+        final int pardonId = sp.load(this, R.raw.pardon, 1);
+        final int rogueLeviosaId = sp.load(this, R.raw.rogue_leviosa, 1);
+        final int ronLeviosaId = sp.load(this, R.raw.ron_leviosa, 1);
+        final int stopItRonId = sp.load(this, R.raw.stop_it_ron, 1);
+        final int wingardiumLeviosaId = sp.load(this, R.raw.wingardium_leviosa, 1);
+
 
 
         // buttons
@@ -48,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
         Button bt_jeBuvais = (Button)this.findViewById(R.id.maisJeBuvais);
         Button bt_tuEsGrosse = (Button)this.findViewById(R.id.tuEsGrosse);
         Button bt_maisOui = (Button)this.findViewById(R.id.maisOui);
+        Button bt_pardon = (Button)this.findViewById(R.id.maisJeBuvais);
+        Button bt_rogueLeviosa = (Button)this.findViewById(R.id.rogueLeviosa);
+        Button bt_ronLeviosa = (Button)this.findViewById(R.id.ronLeviosa);
+        Button bt_stopItRon = (Button)this.findViewById(R.id.stopItRon);
+        Button bt_wingardiumLeviosa = (Button)this.findViewById(R.id.wingardiumLeviosa);
+
 
 
         // onClick events
@@ -81,10 +92,40 @@ public class MainActivity extends AppCompatActivity {
                 sp.play(grosseId, 1, 1, 1, 0, 1);
             }
         });
-        // Mais je buvais! JE BUVAIIIS
+        // Mais OUIIII!
         bt_maisOui.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 sp.play(maisOuiId, 1, 1, 1, 0, 1);
+            }
+        });
+        // Pardon
+        bt_pardon.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                sp.play(pardonId, 1, 1, 1, 0, 1);
+            }
+        });
+        // Leviosaaa (Rogue)
+        bt_rogueLeviosa.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                sp.play(rogueLeviosaId, 1, 1, 1, 0, 1);
+            }
+        });
+        // Leviosaaa (Ron)
+        bt_ronLeviosa.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                sp.play(ronLeviosaId, 1, 1, 1, 0, 1);
+            }
+        });
+        // Stop It Ron
+        bt_stopItRon.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                sp.play(stopItRonId, 1, 1, 1, 0, 1);
+            }
+        });
+        // Wingardium Leviosa
+        bt_wingardiumLeviosa.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                sp.play(wingardiumLeviosaId, 1, 1, 1, 0, 1);
             }
         });
     }
