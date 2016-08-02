@@ -7,82 +7,112 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.olivo.twentyfour.MainActivity">
-
-    <RelativeLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="24 ans"
-            android:id="@+id/a24Ans" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mon sac est fait"
-            android:id="@+id/monSacEstFait"
-            android:layout_below="@+id/a24Ans" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pour combien"
-            android:id="@+id/pourCombien"
-            android:layout_below="@+id/monSacEstFait"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mais je buvais"
-            android:id="@+id/maisJeBuvais"
-            android:layout_below="@+id/maisOui"
-            android:layout_centerHorizontal="true" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pardon"
-            android:id="@+id/maisJeBuvais"
-            android:layout_below="@+id/pourCombien"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tu es grosse"
-            android:id="@+id/tuEsGrosse"
-            android:layout_below="@+id/maisJeBuvais"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mais oui"
-            android:id="@+id/maisOui"
-            android:layout_below="@+id/tuEsGrosse"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Leviosaaa (Rogue)"
-            android:id="@+id/rogueLeviosa"
-            android:layout_below="@+id/maisOui"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Leviosaaa (Ron)"
-            android:id="@+id/ronLeviosa"
-            android:layout_below="@+id/rogueLeviosa"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Stop it Ron"
-            android:id="@+id/stopItRon"
-            android:layout_below="@+id/ronLeviosa"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Wingardium Leviosa"
-            android:id="@+id/wingardiumLeviosa"
-            android:layout_below="@+id/stopItRon"/>
+    tools:context="com.example.olivo.twentyfour.MainActivity"
+    android:scrollIndicators="right">
 
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
 
-    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24 ans"
+                android:id="@+id/a24Ans" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mon sac est fait"
+                android:id="@+id/monSacEstFait"
+                android:layout_below="@+id/a24Ans" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pour combien"
+                android:id="@+id/pourCombien"
+                android:layout_below="@+id/monSacEstFait"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pardon"
+                android:id="@+id/pardon"
+                android:layout_below="@+id/pourCombien"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mais je buvais"
+                android:id="@+id/maisJeBuvais"
+                android:layout_below="@+id/pardon"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tu es grosse"
+                android:id="@+id/tuEsGrosse"
+                android:layout_below="@+id/maisJeBuvais"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mais oui"
+                android:id="@+id/maisOui"
+                android:layout_below="@+id/tuEsGrosse"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leviosaaa (Rogue)"
+                android:id="@+id/rogueLeviosa"
+                android:layout_below="@+id/maisOui"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leviosaaa (Ron)"
+                android:id="@+id/ronLeviosa"
+                android:layout_below="@+id/rogueLeviosa"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop it Ron"
+                android:id="@+id/stopItRon"
+                android:layout_below="@+id/ronLeviosa"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wingardium Leviosa"
+                android:id="@+id/wingardiumLeviosa"
+                android:layout_below="@+id/stopItRon"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test"
+                android:id="@+id/test"
+                android:layout_below="@+id/wingardiumLeviosa"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test2"
+                android:id="@+id/test2"
+                android:layout_below="@+id/test"/>
+        </RelativeLayout>
+    </ScrollView>
+
 </RelativeLayout>

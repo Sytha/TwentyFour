@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         Button bt_jeBuvais = (Button)this.findViewById(R.id.maisJeBuvais);
         Button bt_tuEsGrosse = (Button)this.findViewById(R.id.tuEsGrosse);
         Button bt_maisOui = (Button)this.findViewById(R.id.maisOui);
-        Button bt_pardon = (Button)this.findViewById(R.id.maisJeBuvais);
+        Button bt_pardon = (Button)this.findViewById(R.id.pardon);
         Button bt_rogueLeviosa = (Button)this.findViewById(R.id.rogueLeviosa);
         Button bt_ronLeviosa = (Button)this.findViewById(R.id.ronLeviosa);
         Button bt_stopItRon = (Button)this.findViewById(R.id.stopItRon);
